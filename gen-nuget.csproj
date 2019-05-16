@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>gen</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<PackAsTool>false</PackAsTool>
+		<PackageId>gen</PackageId>
+		<ToolCommandName>xdf</ToolCommandName>
+		<Title>xdf</Title>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.4" />
+	</ItemGroup>
+
+</Project>
