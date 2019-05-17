@@ -5,8 +5,8 @@ using System.Linq;
 [Command("id", Description = "generate id card codes.")]
 public class Id
 {
-    [Argument(0, Description = "The start of ID card number.", Name = "Start")]
-    public string StartWith { get; }
+	[Argument(0, Description = "The start of ID card number.", Name = "Start")]
+	public string StartWith { get; } = "";
 
     [Option(ShortName = "l", LongName = "eighteen", ShowInHelpText = true, Description = "18位身份证号")]
 	public bool Long { get; set; }
@@ -16,14 +16,13 @@ public class Id
 
 	public void OnExecute(IConsole console)
     {
-        console.WriteLine(StartWith);
 		if (Long)
 		{
 			console.WriteLine(genId());
 		}
 		else if (Short)
 		{
-			console.WriteLine("Short");
+			console.WriteLine("To be implemented..");
 		}
     }
 
