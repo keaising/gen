@@ -34,5 +34,4 @@ Compress-Archive -Path ($nugetPath + '/' + $genExeName), ($nugetPath + '/' + $ge
 
 rm -Force -Recurse $nugetPath -ErrorAction SilentlyContinue
 
-$finalName = ($ResultPath + '\' + $zip)
 write ">>> 5. success! you can find zip file in $($ResultPath + '\' + $zip) <<<"
